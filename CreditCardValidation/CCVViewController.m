@@ -10,6 +10,7 @@
 #import "MCFormEditModel.h"
 #import "MCFormCreditCardModel.h"
 #import "MCFormSubmitModel.h"
+#import "MCFormHeaderView.h"
 
 @interface CCVViewController ()
 
@@ -25,9 +26,23 @@
     return self;
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.tableView.backgroundView = nil;
+    self.view.backgroundColor = [UIColor colorWithRed:.12 green:.12 blue:.12 alpha:1];
+}
+
+// Create Models
+
+- (int)currentYear {
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
+    return [components year]%100;
+}
+
 - (void)createModels {
     MCFormModelGroup *group = [[MCFormModelGroup alloc] init];
-    group.title = @"Add a new card";
+    group.title = @"Add a new card:";
+    group.cellClass = [MCFormHeaderView class];
     [self addModelGroup:group];
     
     [group addModel:[self numberModel:self.creditCard]];
@@ -40,14 +55,6 @@
     
     [group addModel:[self submitModel:self.creditCard]];
 }
-
-- (int)currentYear {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:[NSDate date]];
-    return [components year]%100;
-}
-
-
-// Create Models
 
 - (MCFormModel *)numberModel:(__weak CreditCard *)creditCard {
     MCFormCreditCardModel *number = [[MCFormCreditCardModel alloc] init];

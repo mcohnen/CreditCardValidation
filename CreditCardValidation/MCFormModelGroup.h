@@ -14,6 +14,9 @@
 @property (nonatomic, strong) NSMutableArray *models;
 @property (nonatomic, copy) NSString *title;
 
+@property (nonatomic, copy) Class cellClass;
+@property (nonatomic, readonly) NSString *reuseID;
+
 - (void)addModel:(MCFormModel *)model;
 
 @end

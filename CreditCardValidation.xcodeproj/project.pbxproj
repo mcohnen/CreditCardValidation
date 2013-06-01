@@ -14,6 +14,7 @@
 		89248C67175A53FE000E8209 /* MCFormCreditCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C66175A53FE000E8209 /* MCFormCreditCardCell.m */; };
 		89248C6A175A5C64000E8209 /* MCFormSubmitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C69175A5C64000E8209 /* MCFormSubmitModel.m */; };
 		89248C6D175A5CB2000E8209 /* MCFormSubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C6C175A5CB2000E8209 /* MCFormSubmitCell.m */; };
+		89248C71175AB7D3000E8209 /* MCFormHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C70175AB7D3000E8209 /* MCFormHeaderView.m */; };
 		89DE014417592A05001673CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE014317592A05001673CA /* UIKit.framework */; };
 		89DE014617592A05001673CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE014517592A05001673CA /* Foundation.framework */; };
 		89DE014817592A05001673CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE014717592A05001673CA /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 		89248C69175A5C64000E8209 /* MCFormSubmitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormSubmitModel.m; sourceTree = "<group>"; };
 		89248C6B175A5CB2000E8209 /* MCFormSubmitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormSubmitCell.h; sourceTree = "<group>"; };
 		89248C6C175A5CB2000E8209 /* MCFormSubmitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormSubmitCell.m; sourceTree = "<group>"; };
+		89248C6F175AB7D3000E8209 /* MCFormHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormHeaderView.h; sourceTree = "<group>"; };
+		89248C70175AB7D3000E8209 /* MCFormHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormHeaderView.m; sourceTree = "<group>"; };
 		89DE014017592A05001673CA /* CreditCardValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DE014317592A05001673CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		89DE014517592A05001673CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 				89248C66175A53FE000E8209 /* MCFormCreditCardCell.m */,
 				89248C6B175A5CB2000E8209 /* MCFormSubmitCell.h */,
 				89248C6C175A5CB2000E8209 /* MCFormSubmitCell.m */,
+				89248C6F175AB7D3000E8209 /* MCFormHeaderView.h */,
+				89248C70175AB7D3000E8209 /* MCFormHeaderView.m */,
 			);
 			name = View;
 			path = CreditCardValidation;
@@ -299,6 +304,7 @@
 				89248C67175A53FE000E8209 /* MCFormCreditCardCell.m in Sources */,
 				89248C6A175A5C64000E8209 /* MCFormSubmitModel.m in Sources */,
 				89248C6D175A5CB2000E8209 /* MCFormSubmitCell.m in Sources */,
+				89248C71175AB7D3000E8209 /* MCFormHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

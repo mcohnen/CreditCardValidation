@@ -7,8 +7,12 @@
 //
 
 #import "MCFormModelGroup.h"
-
+#import "MCFormHeaderView.h"
 @implementation MCFormModelGroup
+
+- (NSString *)reuseId {
+    return NSStringFromClass(self.cellClass);
+}
 
 - (void)addModel:(MCFormModel *)model {
     if (!_models) {

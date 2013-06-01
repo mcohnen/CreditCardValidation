@@ -8,6 +8,7 @@
 
 #import "MCFormViewController.h"
 #import "MCFormEditCell.h"
+#import "MCFormHeaderView.h"
 
 @interface MCFormViewController ()
 
@@ -63,6 +64,36 @@
     [cell prepareForModel:model];
     
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    MCFormModelGroup *group = [self groupAtSection:section];
+    if (group.cellClass) {
+        return nil;
+    }
+    return [self groupAtSection:section].title;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    MCFormModelGroup *group = [self groupAtSection:section];
+    if (!group.cellClass) {
+        return nil;
+    }
+    MCFormHeaderView *view = [tableView dequeueReusableHeaderFooterViewWithIdentifier:group.reuseID];
+    if (!view) {
+        view = [[group.cellClass alloc] initWithReuseIdentifier:group.reuseID];
+    }
+    [view prepareForGroup:group];
+    return view;
+}
+
+- (float)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    MCFormModelGroup *group = [self groupAtSection:section];
+    if (!group.cellClass) {
+        // Default height
+        return 44;
+    }
+    return [group.cellClass viewHeight];
 }
 
 #pragma mark - Table view delegate
