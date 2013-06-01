@@ -2,6 +2,10 @@
 
 iOS example to validate Credit Cards.
 
+##Installation and Deploy##
+
+- The project includes an Xcode project. You should be able to open it with Xcode and deploy on Simulator or a Device (If you appropiately select a provisioning profile).
+
 ##Notes##
 
 - *MCForm:* To build the form, I used something similar to an opensourced project I did (https://github.com/mcohnen/MCForms). The idea behind it is that you can create a form based on UITableView, simply by creating instances of MCFormModel, that will have both the data to create the table cells, and will provide blocks to interact with touches, changes in textfields, etc... Another advantage is that changing the order of fields within MCForm won't affect any other part of the form, since the models contain the behavior logic too. 
