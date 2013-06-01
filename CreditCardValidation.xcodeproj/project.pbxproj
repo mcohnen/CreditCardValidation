@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89248C5C17594D53000E8209 /* MCFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C5B17594D53000E8209 /* MCFormViewController.m */; };
+		89248C5F17595696000E8209 /* MCFormNumberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C5E17595696000E8209 /* MCFormNumberModel.m */; };
+		89248C62175A45C0000E8209 /* MCFormCreditCardModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C61175A45C0000E8209 /* MCFormCreditCardModel.m */; };
+		89248C64175A52B5000E8209 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 89248C63175A52B5000E8209 /* images */; };
+		89248C67175A53FE000E8209 /* MCFormCreditCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C66175A53FE000E8209 /* MCFormCreditCardCell.m */; };
+		89248C6A175A5C64000E8209 /* MCFormSubmitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C69175A5C64000E8209 /* MCFormSubmitModel.m */; };
+		89248C6D175A5CB2000E8209 /* MCFormSubmitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89248C6C175A5CB2000E8209 /* MCFormSubmitCell.m */; };
 		89DE014417592A05001673CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE014317592A05001673CA /* UIKit.framework */; };
 		89DE014617592A05001673CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE014517592A05001673CA /* Foundation.framework */; };
 		89DE014817592A05001673CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE014717592A05001673CA /* CoreGraphics.framework */; };
@@ -17,10 +24,29 @@
 		89DE015817592A05001673CA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DE015717592A05001673CA /* Default@2x.png */; };
 		89DE015A17592A05001673CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 89DE015917592A05001673CA /* Default-568h@2x.png */; };
 		89DE015D17592A05001673CA /* CCVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE015C17592A05001673CA /* CCVViewController.m */; };
-		89DE016017592A05001673CA /* CCVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DE015E17592A05001673CA /* CCVViewController.xib */; };
+		89DE016817593485001673CA /* CreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE016717593485001673CA /* CreditCard.m */; };
+		89DE016C1759370A001673CA /* MCFormEditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE016B1759370A001673CA /* MCFormEditCell.m */; };
+		89DE017117593874001673CA /* UIView+MC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE017017593874001673CA /* UIView+MC.m */; };
+		89DE017617593CCB001673CA /* MCFormEditModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE017517593CCB001673CA /* MCFormEditModel.m */; };
+		89DE017C175946D2001673CA /* MCFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE017B175946D2001673CA /* MCFormModel.m */; };
+		89DE0183175947AE001673CA /* MCFormModelGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE0182175947AE001673CA /* MCFormModelGroup.m */; };
+		89DE018617594942001673CA /* MCFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DE018517594942001673CA /* MCFormCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89248C5A17594D53000E8209 /* MCFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormViewController.h; sourceTree = "<group>"; };
+		89248C5B17594D53000E8209 /* MCFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormViewController.m; sourceTree = "<group>"; };
+		89248C5D17595696000E8209 /* MCFormNumberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormNumberModel.h; sourceTree = "<group>"; };
+		89248C5E17595696000E8209 /* MCFormNumberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormNumberModel.m; sourceTree = "<group>"; };
+		89248C60175A45C0000E8209 /* MCFormCreditCardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormCreditCardModel.h; sourceTree = "<group>"; };
+		89248C61175A45C0000E8209 /* MCFormCreditCardModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormCreditCardModel.m; sourceTree = "<group>"; };
+		89248C63175A52B5000E8209 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		89248C65175A53FE000E8209 /* MCFormCreditCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormCreditCardCell.h; sourceTree = "<group>"; };
+		89248C66175A53FE000E8209 /* MCFormCreditCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormCreditCardCell.m; sourceTree = "<group>"; };
+		89248C68175A5C64000E8209 /* MCFormSubmitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormSubmitModel.h; sourceTree = "<group>"; };
+		89248C69175A5C64000E8209 /* MCFormSubmitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormSubmitModel.m; sourceTree = "<group>"; };
+		89248C6B175A5CB2000E8209 /* MCFormSubmitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormSubmitCell.h; sourceTree = "<group>"; };
+		89248C6C175A5CB2000E8209 /* MCFormSubmitCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormSubmitCell.m; sourceTree = "<group>"; };
 		89DE014017592A05001673CA /* CreditCardValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DE014317592A05001673CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		89DE014517592A05001673CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -36,7 +62,20 @@
 		89DE015917592A05001673CA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		89DE015B17592A05001673CA /* CCVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCVViewController.h; sourceTree = "<group>"; };
 		89DE015C17592A05001673CA /* CCVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCVViewController.m; sourceTree = "<group>"; };
-		89DE015F17592A05001673CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CCVViewController.xib; sourceTree = "<group>"; };
+		89DE016617593485001673CA /* CreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCard.h; sourceTree = "<group>"; };
+		89DE016717593485001673CA /* CreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCard.m; sourceTree = "<group>"; };
+		89DE016A1759370A001673CA /* MCFormEditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormEditCell.h; sourceTree = "<group>"; };
+		89DE016B1759370A001673CA /* MCFormEditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormEditCell.m; sourceTree = "<group>"; };
+		89DE016F17593874001673CA /* UIView+MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MC.h"; sourceTree = "<group>"; };
+		89DE017017593874001673CA /* UIView+MC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MC.m"; sourceTree = "<group>"; };
+		89DE017417593CCB001673CA /* MCFormEditModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormEditModel.h; sourceTree = "<group>"; };
+		89DE017517593CCB001673CA /* MCFormEditModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormEditModel.m; sourceTree = "<group>"; };
+		89DE017A175946D2001673CA /* MCFormModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormModel.h; sourceTree = "<group>"; };
+		89DE017B175946D2001673CA /* MCFormModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormModel.m; sourceTree = "<group>"; };
+		89DE0181175947AE001673CA /* MCFormModelGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormModelGroup.h; sourceTree = "<group>"; };
+		89DE0182175947AE001673CA /* MCFormModelGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormModelGroup.m; sourceTree = "<group>"; };
+		89DE018417594941001673CA /* MCFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFormCell.h; sourceTree = "<group>"; };
+		89DE018517594942001673CA /* MCFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFormCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +92,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		89248C6E175A9D8C000E8209 /* MCForm */ = {
+			isa = PBXGroup;
+			children = (
+				89DE017D175946FC001673CA /* ViewController */,
+				89DE0169175936EE001673CA /* View */,
+				89DE017317593C90001673CA /* Model */,
+			);
+			name = MCForm;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		89DE013717592A05001673CA = {
 			isa = PBXGroup;
 			children = (
@@ -83,11 +133,14 @@
 		89DE014917592A05001673CA /* CreditCardValidation */ = {
 			isa = PBXGroup;
 			children = (
+				89248C6E175A9D8C000E8209 /* MCForm */,
+				89DE016E1759385B001673CA /* Categories */,
 				89DE015217592A05001673CA /* CCVAppDelegate.h */,
 				89DE015317592A05001673CA /* CCVAppDelegate.m */,
 				89DE015B17592A05001673CA /* CCVViewController.h */,
 				89DE015C17592A05001673CA /* CCVViewController.m */,
-				89DE015E17592A05001673CA /* CCVViewController.xib */,
+				89DE016617593485001673CA /* CreditCard.h */,
+				89DE016717593485001673CA /* CreditCard.m */,
 				89DE014A17592A05001673CA /* Supporting Files */,
 			);
 			path = CreditCardValidation;
@@ -96,6 +149,7 @@
 		89DE014A17592A05001673CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89248C63175A52B5000E8209 /* images */,
 				89DE014B17592A05001673CA /* CreditCardValidation-Info.plist */,
 				89DE014C17592A05001673CA /* InfoPlist.strings */,
 				89DE014F17592A05001673CA /* main.m */,
@@ -105,6 +159,61 @@
 				89DE015917592A05001673CA /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89DE0169175936EE001673CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89DE016A1759370A001673CA /* MCFormEditCell.h */,
+				89DE016B1759370A001673CA /* MCFormEditCell.m */,
+				89DE018417594941001673CA /* MCFormCell.h */,
+				89DE018517594942001673CA /* MCFormCell.m */,
+				89248C65175A53FE000E8209 /* MCFormCreditCardCell.h */,
+				89248C66175A53FE000E8209 /* MCFormCreditCardCell.m */,
+				89248C6B175A5CB2000E8209 /* MCFormSubmitCell.h */,
+				89248C6C175A5CB2000E8209 /* MCFormSubmitCell.m */,
+			);
+			name = View;
+			path = CreditCardValidation;
+			sourceTree = "<group>";
+		};
+		89DE016E1759385B001673CA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				89DE016F17593874001673CA /* UIView+MC.h */,
+				89DE017017593874001673CA /* UIView+MC.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		89DE017317593C90001673CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				89DE017417593CCB001673CA /* MCFormEditModel.h */,
+				89DE017517593CCB001673CA /* MCFormEditModel.m */,
+				89DE017A175946D2001673CA /* MCFormModel.h */,
+				89DE017B175946D2001673CA /* MCFormModel.m */,
+				89DE0181175947AE001673CA /* MCFormModelGroup.h */,
+				89DE0182175947AE001673CA /* MCFormModelGroup.m */,
+				89248C5D17595696000E8209 /* MCFormNumberModel.h */,
+				89248C5E17595696000E8209 /* MCFormNumberModel.m */,
+				89248C60175A45C0000E8209 /* MCFormCreditCardModel.h */,
+				89248C61175A45C0000E8209 /* MCFormCreditCardModel.m */,
+				89248C68175A5C64000E8209 /* MCFormSubmitModel.h */,
+				89248C69175A5C64000E8209 /* MCFormSubmitModel.m */,
+			);
+			name = Model;
+			path = CreditCardValidation;
+			sourceTree = "<group>";
+		};
+		89DE017D175946FC001673CA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89248C5A17594D53000E8209 /* MCFormViewController.h */,
+				89248C5B17594D53000E8209 /* MCFormViewController.m */,
+			);
+			name = ViewController;
+			path = CreditCardValidation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +272,7 @@
 				89DE015617592A05001673CA /* Default.png in Resources */,
 				89DE015817592A05001673CA /* Default@2x.png in Resources */,
 				89DE015A17592A05001673CA /* Default-568h@2x.png in Resources */,
-				89DE016017592A05001673CA /* CCVViewController.xib in Resources */,
+				89248C64175A52B5000E8209 /* images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +286,19 @@
 				89DE015017592A05001673CA /* main.m in Sources */,
 				89DE015417592A05001673CA /* CCVAppDelegate.m in Sources */,
 				89DE015D17592A05001673CA /* CCVViewController.m in Sources */,
+				89DE016817593485001673CA /* CreditCard.m in Sources */,
+				89DE016C1759370A001673CA /* MCFormEditCell.m in Sources */,
+				89DE017117593874001673CA /* UIView+MC.m in Sources */,
+				89DE017617593CCB001673CA /* MCFormEditModel.m in Sources */,
+				89DE017C175946D2001673CA /* MCFormModel.m in Sources */,
+				89DE0183175947AE001673CA /* MCFormModelGroup.m in Sources */,
+				89DE018617594942001673CA /* MCFormCell.m in Sources */,
+				89248C5C17594D53000E8209 /* MCFormViewController.m in Sources */,
+				89248C5F17595696000E8209 /* MCFormNumberModel.m in Sources */,
+				89248C62175A45C0000E8209 /* MCFormCreditCardModel.m in Sources */,
+				89248C67175A53FE000E8209 /* MCFormCreditCardCell.m in Sources */,
+				89248C6A175A5C64000E8209 /* MCFormSubmitModel.m in Sources */,
+				89248C6D175A5CB2000E8209 /* MCFormSubmitCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +311,6 @@
 				89DE014D17592A05001673CA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		89DE015E17592A05001673CA /* CCVViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				89DE015F17592A05001673CA /* en */,
-			);
-			name = CCVViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +413,7 @@
 				89DE016517592A05001673CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

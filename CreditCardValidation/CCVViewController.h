@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MCFormViewController.h"
+#import "CreditCard.h"
 
-@interface CCVViewController : UIViewController
+@interface CCVViewController : MCFormViewController {
+}
+
+@property (nonatomic, strong) CreditCard *creditCard;
 
 @end
