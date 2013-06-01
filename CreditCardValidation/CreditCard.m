@@ -80,7 +80,7 @@
 }
 
 - (NSArray *)validateCCV {
-    if (self.ccv.intValue == 0 || self.ccv.length != 3) {
+    if (self.ccv.intValue == 0 || self.ccv.length < 2 || self.ccv.length > 4) {
         return @[@"CCV should be 3-4 numbers"];
     }
     return @[];
