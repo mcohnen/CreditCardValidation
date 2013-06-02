@@ -126,6 +126,8 @@
     MCFormEditModel *zipCode = [[MCFormEditModel alloc] init];
     // Zip codes can contain letters and symbols in different countries
     zipCode.keyboardType = UIKeyboardTypeDefault;
+    zipCode.autocorrectionType = UITextAutocorrectionTypeNo;
+    zipCode.autocapitalizationType = UITextAutocapitalizationTypeNone;
     zipCode.placeholder = @"Zip code";
     zipCode.returnKeyType = UIReturnKeyDone;
     [zipCode setReturnBlock:^BOOL(MCFormEditModel *model, MCFormViewController *formVC) {
