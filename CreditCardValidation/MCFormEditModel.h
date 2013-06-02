@@ -18,6 +18,7 @@ typedef enum {
 
 typedef BOOL (^MCFormValidateBlock)(MCFormEditModel *model, MCFormViewController *formVC, NSString *text);
 typedef void (^MCFormTextChangedBlock)(MCFormEditModel *model, MCFormViewController *formVC, NSString *text);
+typedef BOOL (^MCFormShouldReturnBlock)(MCFormEditModel *model, MCFormViewController *formVC);
 
 @interface MCFormEditModel : MCFormModel <UITextFieldDelegate>
 
@@ -28,11 +29,13 @@ typedef void (^MCFormTextChangedBlock)(MCFormEditModel *model, MCFormViewControl
 @property (nonatomic, assign) MCFormValidateStyle validateStyle;
 
 @property (nonatomic, assign) UIKeyboardType keyboardType;
+@property (nonatomic, assign) UIReturnKeyType returnKeyType;
 @property (nonatomic, assign) UITextAutocorrectionType autocorrectionType;
 @property (nonatomic, assign) UITextAutocapitalizationType autocapitalizationType;
 
 @property (nonatomic, copy) MCFormValidateBlock validateBlock;
 @property (nonatomic, copy) MCFormTextChangedBlock changedBlock;
+@property (nonatomic, copy) MCFormShouldReturnBlock returnBlock;
 
 + (BOOL)validateText:(NSString *)text regex:(NSString *)regexStr;
 
@@ -41,5 +44,6 @@ typedef void (^MCFormTextChangedBlock)(MCFormEditModel *model, MCFormViewControl
 
 - (void)setValidateBlock:(MCFormValidateBlock)validateBlock;
 - (void)setChangedBlock:(MCFormTextChangedBlock)changedBlock;
+- (void)setReturnBlock:(MCFormShouldReturnBlock)returnBlock;
 
 @end

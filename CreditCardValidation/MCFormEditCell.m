@@ -45,6 +45,7 @@
     _textField.placeholder = model.placeholder;
     _textField.autocapitalizationType = model.autocapitalizationType;
     _textField.keyboardType = model.keyboardType;
+    _textField.returnKeyType = model.returnKeyType;
     
     _textField.delegate = model;
 }

@@ -79,8 +79,16 @@
     return errors;
 }
 
+- (NSArray *)validateZipCode {
+    // zip codes are tricky, so just check if it is not empty
+    if (self.zipCode.length < 1) {
+        return @[@"Zip code can't be empty"];
+    }
+    return @[];
+}
+
 - (NSArray *)validateCCV {
-    if (self.ccv.intValue == 0 || self.ccv.length < 2 || self.ccv.length > 4) {
+    if (self.ccv.intValue == 0 || self.ccv.length < 3 || self.ccv.length > 4) {
         return @[@"CCV should be 3-4 numbers"];
     }
     return @[];
@@ -93,6 +101,7 @@
     }
     [errors addObjectsFromArray:[self validateExpirationDate]];
     [errors addObjectsFromArray:[self validateCCV]];
+    [errors addObjectsFromArray:[self validateZipCode]];
     return errors ? errors : nil;
 }
 

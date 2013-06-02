@@ -72,5 +72,12 @@
     return true;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (self.returnBlock) {
+        return self.returnBlock(self, self.formVC);
+    }
+    return YES;
+}
+
 
 @end
