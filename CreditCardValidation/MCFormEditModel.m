@@ -44,6 +44,7 @@
 }
 
 - (void)textChanged:(NSString *)text {
+    self.text = text;
     if (self.changedBlock) {
         self.changedBlock(self, self.formVC, text);
     }
